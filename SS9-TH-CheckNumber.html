@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkNumber(str) {
+        let regexp = /^[0-9]{2}\-[0][0-9]+$/;
+        return regexp.test(str)
+    }
+    let str = prompt("Input Number phone");
+    let result = checkNumber(str);
+    if(result===true){
+        alert("Number Invalid")
+    }else {alert("Number unInvalid")}
+</script>
+</body>
+</html>
